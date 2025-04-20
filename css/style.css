@@ -1,4 +1,236 @@
-body {
-  background: #000;
+/* Modal backdrop */
+.ewl_modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Modal content box */
+.ewl_modal-content-lg {
+  max-width: 800px;
+}
+.ewl_modal-content-sm {
+  max-width: 480px;
+}
+
+.ewl_modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.ewl_modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1dfed;
+  padding-bottom: 15px;
+  margin-bottom: 1rem;
+}
+.ewl_modal-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ewl_modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.ewl-light-btn {
+  border: 1px solid #c1c1c1;
+  color: #090909;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.ewl-light-btn:hover {
+  background: #808080;
   color: #fff;
+  border: 1px solid #808080;
+}
+
+.ewl-dark-btn {
+  background: #090909;
+  border: 1px solid #090909;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.ewl-dark-btn:hover {
+  background: #3f3f3f;
+  border-color: #3f3f3f;
+  color: #fff;
+}
+
+/* Close button */
+.ewl_close-btn {
+  color: #aaa;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ewl_close-btn:hover {
+  color: #000;
+}
+
+.ewl-product-list,
+.ewl-created-w-list {
+  display: flex;
+  justify-content: baseline;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #e1dfed;
+  padding-bottom: 15px;
+  margin-bottom: 1rem;
+}
+
+.ewl-created-w-list {
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.ewl-product-list img {
+  width: 50px;
+  height: auto;
+}
+.ewl-product-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ewl-created-w-list-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ewl-created-w-list {
+  border: none;
+}
+
+.ewl-created-w-list-img {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ewl-created-w-list-img img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.ewl-created-w-info {
+  display: flex;
+  justify-content: baseline;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* checkbox */
+input.ewl-checkbox[type="checkbox"] {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 18px;
+  width: 18px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+}
+
+input.ewl-checkbox[type="checkbox"]:hover {
+  opacity: 1;
+}
+
+input.ewl-checkbox[type="checkbox"]:checked {
+  background-color: #000;
+  opacity: 1;
+}
+
+input.ewl-checkbox[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -2px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* create wishlist field */
+.ewl-nw {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #090909;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ewl-created-w-info input {
+  border: 1px solid #c1c1c1;
+  border-radius: 6px;
+  height: 40px;
+  padding: 10px;
+  display: block;
+  width: calc(100% - 40px);
+}
+
+.ewl-new-create-w {
+  width: 100%;
+}
+
+.ewl-created-w-list-new-entry {
+  width: 30px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
