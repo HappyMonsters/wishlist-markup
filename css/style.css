@@ -223,7 +223,7 @@ input.ewl-checkbox[type="checkbox"]:before {
   width: 30px;
 }
 /* notification */
-.ewl-w-notification {
+.ewl_w-notification {
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 6px;
@@ -233,24 +233,78 @@ input.ewl-checkbox[type="checkbox"]:before {
   align-items: center;
   gap: 1rem;
 }
-.ewl-w-notification-text {
+.ewl_w-notification-text {
   font-size: 14px;
   color: #808080;
   line-height: 1.6;
 }
 
-.ewl-w-notification-text span {
+.ewl_w-notification-text span {
   font-weight: bold;
   color: #000;
 }
 
-.ewl-w-thumb {
+.ewl_w-thumb {
   width: 50px;
   height: auto;
 }
-.ewl-notification-sign {
+.ewl_notification-sign {
   width: 30px;
   height: auto;
   right: 10px;
   position: relative;
+}
+
+/* socail share */
+
+.ewl-social-share-icon {
+  display: flex;
+  justify-content: baseline;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+.ewl_social-share-text {
+  position: relative;
+  width: 100%;
+}
+
+.ewl_social-share-text input[type="text"] {
+  width: 100%;
+  padding: 15px 90px 15px 15px;
+  font-size: 14px;
+  border: 1px solid #e1dfed;
+  border-radius: 30px;
+  outline: none;
+}
+
+.ewl_social-share-text button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #090909;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+
+.ewl_social-share-text button:hover {
+  background: #3f3f3f;
+}
+
+/* modal effect */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
