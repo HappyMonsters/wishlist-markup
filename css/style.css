@@ -474,7 +474,7 @@ input.ewl-checkbox[type="checkbox"]:before {
 
 .ewl_cc-dropdown-content input[type="text"] {
   width: 100%;
-  padding: 10px 10px;
+  padding: 12px 10px;
   margin-bottom: 12px;
   border: 1px solid #c1c1c1;
   border-radius: 6px;
