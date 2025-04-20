@@ -222,3 +222,35 @@ input.ewl-checkbox[type="checkbox"]:before {
 .ewl-created-w-list-new-entry {
   width: 30px;
 }
+/* notification */
+.ewl-w-notification {
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.ewl-w-notification-text {
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.6;
+}
+
+.ewl-w-notification-text span {
+  font-weight: bold;
+  color: #000;
+}
+
+.ewl-w-thumb {
+  width: 50px;
+  height: auto;
+}
+.ewl-notification-sign {
+  width: 30px;
+  height: auto;
+  right: 10px;
+  position: relative;
+}
