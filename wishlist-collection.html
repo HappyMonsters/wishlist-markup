@@ -23,8 +23,8 @@
             <div class="ewl_wc-action">
               <a href="#" class="ewl_rv-btn">Recently viewed</a>
               <div class="ewl_cc-dropdown">
-                <button class="ewl_cnc-btn">+ Create New Collection</button>
-                <div class="ewl_cc-dropdown-content">
+                <button class="ewl_cnc-btn" onclick="toggleDropdown()">+ Create New Collection</button>
+                <div id="myDropdown" class="ewl_cc-dropdown-content">
                   <div class="ewl_cc-dropdown-title">Create New Collection</div>
                   <input type="text" placeholder="Enter new wishlist name" />
                   <button class="ewl_cc-dropdown-submit">Submit</button>
@@ -189,5 +189,23 @@
         <!-- / modal body -->
       </div>
     </div>
+
+    <script>
+      function toggleDropdown() {
+        const dropdown = document.getElementById("myDropdown");
+        dropdown.classList.toggle("show");
+      }
+
+      // Close dropdown if clicked outside the dropdown or button
+      window.addEventListener("click", function (event) {
+        const dropdown = document.getElementById("myDropdown");
+        const button = document.querySelector(".ewl_cnc-btn");
+
+        // Check if the click is outside both the button and dropdown
+        if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+          dropdown.classList.remove("show");
+        }
+      });
+    </script>
   </body>
 </html>

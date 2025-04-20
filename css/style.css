@@ -319,10 +319,17 @@ input.ewl-checkbox[type="checkbox"]:before {
 /* wishlist collection */
 
 .ewl_wc-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .ewl_wc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .ewl_wc-header-title {
@@ -355,13 +362,42 @@ input.ewl-checkbox[type="checkbox"]:before {
   background: #fff;
 }
 
+@media only screen and (max-width: 480px) {
+  .ewl_rv-btn,
+  .ewl_cnc-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .ewl_cc-dropdown-content {
+    min-width: 260px !important;
+  }
+  .ewl_wc-action {
+    justify-content: center;
+  }
+  .ewl_wc-header {
+    text-align: center;
+  }
+}
+
 /* wishlist grid */
 
 .ewl_wl-grid {
   display: grid;
   column-gap: 30px;
   row-gap: 30px;
-  grid-template-columns: auto auto auto;
+  /* grid-template-columns: auto auto; */
+}
+
+@media only screen and (min-width: 480px) {
+  .ewl_wl-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ewl_wl-grid {
+    grid-template-columns: auto auto auto;
+  }
 }
 
 .ewl_wl-grid .ewl_wl-grid-item {
@@ -438,13 +474,11 @@ input.ewl-checkbox[type="checkbox"]:before {
   opacity: 1;
 }
 
-
 /* Dropdown wrapper */
 .ewl_cc-dropdown {
   position: relative;
   display: inline-block;
 }
-
 
 .ewl_cc-dropdown-content {
   display: none;
@@ -460,17 +494,21 @@ input.ewl-checkbox[type="checkbox"]:before {
 }
 
 /* Show on hover */
-.ewl_cc-dropdown:hover .ewl_cc-dropdown-content {
+
+/* .ewl_cc-dropdown:hover .ewl_cc-dropdown-content {
+  display: block;
+} */
+
+/* Show class to toggle dropdown */
+.ewl_cc-dropdown-content.show {
   display: block;
 }
-
 
 .ewl_cc-dropdown-title {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 
 .ewl_cc-dropdown-content input[type="text"] {
   width: 100%;
@@ -481,7 +519,6 @@ input.ewl-checkbox[type="checkbox"]:before {
   box-sizing: border-box;
   font-size: 14px;
 }
-
 
 .ewl_cc-dropdown-submit {
   display: block;
