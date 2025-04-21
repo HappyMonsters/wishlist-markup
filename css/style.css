@@ -29,6 +29,19 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
+/* modal effect */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .ewl_modal-header {
   display: flex;
   justify-content: space-between;
@@ -261,6 +274,26 @@ input.ewl-checkbox[type="checkbox"]:before {
   position: relative;
 }
 
+.ewl_w-notification-position {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  animation: slideRight 0.5s ease-out forwards;
+}
+
+/* notification effect */
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /* socail share */
 
 .ewl-social-share-icon {
@@ -301,19 +334,6 @@ input.ewl-checkbox[type="checkbox"]:before {
 
 .ewl_social-share-text button:hover {
   background: #3f3f3f;
-}
-
-/* modal effect */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 /* wishlist collection */
