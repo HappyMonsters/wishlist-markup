@@ -1,0 +1,245 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wishlist markup</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <!-- Modal -->
+    <div id="myModal" class="ewl_modal">
+      <div class="ewl_modal-content ewl_modal-content-lg">
+        <!-- modal header -->
+        <div class="ewl_modal-header">
+          <h2 class="ewl_modal-title ewl-t-lg">Wishlist</h2>
+          <span class="ewl_close-btn">&times;</span>
+        </div>
+        <!-- / modal header -->
+
+        <!-- modal body -->
+        <div class="ewl_modal-body">
+          <div class="ewl_wc-header">
+            <h3 class="ewl_wc-header-title ewl-group-title">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+              </a>
+              <span>My Dress (6)</span>
+            </h3>
+            <div class="ewl_wc-action ewl-w-c-d-action">
+              <div class="ewl_cc-dropdown ewl_cld-dropdown">
+                <button class="ewl_cnc-btn" onclick="toggleDropdown()">
+                  <span class="ewl_c-drop-btn-info">
+                    <img src="img/d1.jpg" alt="" />
+                    <span>My Dress (6)</span>
+                  </span>
+                  <span class="ewl_c-drop-btn-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                  </span>
+                </button>
+                <div id="myDropdown" class="ewl_cc-dropdown-content">
+                  <div class="ewl-collection-list-option">
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d1.jpg" alt="" />
+                      <span>My Dress (6)</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d2.jpg" alt="" />
+                      <span>Electronics (2)</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d3.jpg" alt="" />
+                      <span>Food & Drinks</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d1.jpg" alt="" />
+                      <span>My Dress (6)</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d2.jpg" alt="" />
+                      <span>Electronics (2)</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d3.jpg" alt="" />
+                      <span>Food & Drinks</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d1.jpg" alt="" />
+                      <span>My Dress (6)</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d2.jpg" alt="" />
+                      <span>Electronics (2)</span>
+                    </span>
+                    <span class="ewl_c-drop-btn-info">
+                      <img src="img/d3.jpg" alt="" />
+                      <span>Food & Drinks</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- collection list -->
+          <div class="ewl_collection-list">
+            <div class="ewl_product-info">
+              <a href="#"><img src="img/d1.jpg" alt="" /></a>
+              <div class="ewl-cl-lft">
+                <div class="ewl_product-info-title"><a href="#">Ribbed modal T-shirt</a></div>
+                <div class="ewl_product-info-price"><del>$25.00</del> <span>$20.00</span></div>
+                <!-- view only responsive mode -->
+                <div class="ewl_product-view-cart-action-responsive">
+                  <a href="#" data-tooltip="Add to Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" data-tooltip="View">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                    </svg>
+                  </a>
+                  <a href="#" data-tooltip="Social Share">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                      <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
+                    </svg>
+                  </a>
+                  <a href="#" data-tooltip="Remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                      <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                      <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                    </svg>
+                  </a>
+                </div>
+                <!-- / view only responsive mode -->
+              </div>
+            </div>
+            <div class="ewl-cl-rgt">
+              <div class="ewl_product-view-cart-action">
+                <a href="#" data-tooltip="Add to Cart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                    />
+                  </svg>
+                </a>
+                <a href="#" data-tooltip="View">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="ewl_product-share-remove-action">
+                <a href="#" data-tooltip="Social Share">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
+                  </svg>
+                </a>
+                <a href="#" data-tooltip="Remove">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="ewl_collection-list">
+            <div class="ewl_product-info">
+              <a href="#"><img src="img/d2.jpg" alt="" /></a>
+              <div class="ewl-cl-lft">
+                <div class="ewl_product-info-title"><a href="#">Tommy hill figure Tommy hill figure modal</a></div>
+                <div class="ewl_product-info-price"><del>$25.00</del> <span>$20.00</span></div>
+                <!-- view only responsive mode -->
+                <div class="ewl_product-view-cart-action-responsive">
+                  <a href="#" data-tooltip="Add to Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" data-tooltip="View">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                      <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                      <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                    </svg>
+                  </a>
+                  <a href="#" data-tooltip="Social Share">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                      <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
+                    </svg>
+                  </a>
+                  <a href="#" data-tooltip="Remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                      <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                      <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                    </svg>
+                  </a>
+                </div>
+                <!-- / view only responsive mode -->
+              </div>
+            </div>
+            <div class="ewl-cl-rgt">
+              <div class="ewl_product-view-cart-action">
+                <a href="#" data-tooltip="Add to Cart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                    />
+                  </svg>
+                </a>
+                <a href="#" data-tooltip="View">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="ewl_product-share-remove-action">
+                <a href="#" data-tooltip="Social Share">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
+                  </svg>
+                </a>
+                <a href="#" data-tooltip="Remove">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- / modal body -->
+      </div>
+    </div>
+
+    <script>
+      function toggleDropdown() {
+        const dropdown = document.getElementById("myDropdown");
+        dropdown.classList.toggle("show");
+      }
+
+      // Close dropdown if clicked outside the dropdown or button
+      window.addEventListener("click", function (event) {
+        const dropdown = document.getElementById("myDropdown");
+        const button = document.querySelector(".ewl_cnc-btn");
+
+        // Check if the click is outside both the button and dropdown
+        if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+          dropdown.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>

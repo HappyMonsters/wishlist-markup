@@ -472,7 +472,10 @@ input.ewl-checkbox[type="checkbox"]:before {
 }
 
 /* Tooltip styles */
-.ewl_wl-item-action a::after {
+.ewl_wl-item-action a::after,
+.ewl_product-view-cart-action a::after,
+.ewl_product-share-remove-action a::after,
+.ewl_product-view-cart-action-responsive a::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 110%;
@@ -490,7 +493,10 @@ input.ewl-checkbox[type="checkbox"]:before {
   z-index: 10;
 }
 
-.ewl_wl-item-action a:hover::after {
+.ewl_wl-item-action a:hover::after,
+.ewl_product-view-cart-action a:hover::after,
+.ewl_product-share-remove-action a:hover::after,
+.ewl_product-view-cart-action-responsive a:hover::after {
   opacity: 1;
 }
 
@@ -511,6 +517,7 @@ input.ewl-checkbox[type="checkbox"]:before {
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-top: 1px;
+  border: 1px solid #e1dfed;
 }
 
 /* Show on hover */
@@ -554,4 +561,216 @@ input.ewl-checkbox[type="checkbox"]:before {
 
 .ewl_cc-dropdown-submit:hover {
   background-color: #3f3f3f;
+}
+
+/* group title */
+
+.ewl-group-title {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ewl-group-title a {
+  color: #000;
+}
+
+.ewl-group-title a svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* collection list */
+.ewl_collection-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e1dfed;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ewl_product-info {
+  gap: 1.5rem;
+}
+
+.ewl_product-info img {
+  width: 100px;
+  height: auto;
+}
+
+.ewl_product-info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ewl_product-info-title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.ewl_product-info-price {
+  font-size: 16px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ewl_product-info-price del {
+  color: #808080;
+}
+.ewl_product-info-price span {
+  color: #fe5757;
+}
+
+.ewl_product-info,
+.ewl_product-view-cart-action,
+.ewl_product-share-remove-action,
+.ewl_product-view-cart-action-responsive {
+  display: flex;
+  align-items: center;
+}
+
+.ewl_product-view-cart-action,
+.ewl_product-share-remove-action,
+.ewl_product-view-cart-action-responsive {
+  gap: 0.5rem;
+}
+
+.ewl_product-view-cart-action a,
+.ewl_product-share-remove-action a,
+.ewl_product-view-cart-action-responsive a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #c1c1c1;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.ewl_product-view-cart-action-responsive {
+  margin-top: 1rem;
+}
+.ewl_product-view-cart-action-responsive a {
+  width: 30px;
+  height: 30px;
+}
+
+.ewl_product-view-cart-action-responsive a svg {
+  width: 15px;
+  height: 15px;
+}
+
+.ewl_product-share-remove-action a {
+  background: #ececec;
+  justify-content: center;
+  align-items: center;
+  border-color: #ececec;
+}
+
+.ewl_product-view-cart-action a:hover,
+.ewl_product-share-remove-action a:hover,
+.ewl_product-view-cart-action-responsive a:hover {
+  background: #000;
+  color: fff;
+  border-color: #000;
+}
+
+.ewl_product-view-cart-action-responsive {
+  display: none;
+}
+
+.ewl_cld-dropdown .ewl_cnc-btn {
+  border-color: #e1e1e1;
+  color: #141b34;
+  padding: 5px 10px;
+  min-width: 260px;
+  position: relative;
+}
+
+.ewl_cld-dropdown .ewl_cc-dropdown-content {
+  min-width: 260px;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ewl_c-drop-btn-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ewl_c-drop-btn-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.ewl_c-drop-btn-info span {
+  font-weight: 500;
+}
+
+.ewl_c-drop-btn-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ewl-collection-list-option {
+  overflow-y: scroll;
+  height: 300px;
+}
+
+.ewl-collection-list-option .ewl_c-drop-btn-info {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.ewl-collection-list-option .ewl_c-drop-btn-info:hover {
+  background: #ececec;
+}
+
+.ewl-cl-lft {
+  width: 380px;
+}
+
+.ewl-cl-rgt {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .ewl-cl-rgt,
+  .ewl-cl-lft {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ewl_product-view-cart-action,
+  .ewl_product-share-remove-action {
+    display: none;
+  }
+  .ewl_product-info img {
+    width: 80px;
+  }
+  .ewl_product-info {
+    gap: 1rem;
+  }
+
+  .ewl_product-view-cart-action-responsive {
+    display: flex;
+  }
+  .ewl-group-title,
+  .ewl-w-c-d-action {
+    justify-content: center;
+  }
 }
