@@ -774,3 +774,29 @@ input.ewl-checkbox[type="checkbox"]:before {
     justify-content: center;
   }
 }
+
+/* add to wishlist button */
+
+.ewl_add-to-wishlist-btn {
+  width: 15rem;
+  background: #fff;
+  border: 1px solid #c1c1c1;
+  padding: 15px 30px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #090909;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+
+.ewl_add-to-wishlist-btn:hover {
+  background: #000;
+  border-color: transparent;
+  color: #fff;
+}
