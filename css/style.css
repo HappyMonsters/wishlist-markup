@@ -795,7 +795,8 @@ input.ewl-checkbox[type="checkbox"]:before {
   transition: all 0.3s;
 }
 
-.ewl_add-to-wishlist-btn:hover {
+.ewl_add-to-wishlist-btn:hover,
+.ewl-w-added-btn {
   background: #000;
   border-color: transparent;
   color: #fff;
