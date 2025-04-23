@@ -440,6 +440,11 @@ input.ewl-checkbox[type="checkbox"]:before {
   margin-bottom: 2rem;
 }
 
+.ewl_wl-grid-item-thumb img {
+  width: auto;
+  height: 150px;
+}
+
 .ewl_wl-grid-item-header span {
   font-size: 14px;
   font-weight: normal;
