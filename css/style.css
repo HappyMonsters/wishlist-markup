@@ -908,6 +908,16 @@ input.ewl-checkbox[type="checkbox"]:before {
   font-size: 24px;
   cursor: pointer;
   color: #090909;
+  /* border: 1px solid #e1e1e1; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.ewl_q-action-button:hover {
+  /* border: 1px solid #e1e1e1; */
+  background: #f3f4f5;
 }
 
 .ewl_q-action-button:hover {
@@ -917,7 +927,7 @@ input.ewl-checkbox[type="checkbox"]:before {
 .ewl_q-action-menu {
   display: none;
   position: absolute;
-  top: 30px;
+  top: 45px;
   right: 0;
   background-color: white;
   border: 1px solid #e1dfed;
