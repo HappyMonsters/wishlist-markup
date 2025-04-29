@@ -6,32 +6,25 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
   </head>
   <body>
+    <div>body content</div>
     <!-- Modal -->
     <div id="myModal" class="ewl_modal ewl_sidebar ewl-sidebar-disappear-">
       <div class="ewl_modal-content ewl_modal-content-lg">
         <!-- modal header -->
         <div class="ewl_modal-header">
           <h2 class="ewl_modal-title ewl-t-lg">Wishlist</h2>
-          <span class="ewl_close-btn">&times;</span>
+          <span class="ewl_close-btn" onclick="handleClick(this)">&times;</span>
         </div>
         <!-- / modal header -->
 
         <!-- modal body -->
         <div class="ewl_modal-body">
           <div class="ewl_wc-header">
-            <h3 class="ewl_wc-header-title ewl-group-title">
-              <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                </svg>
-              </a>
-              <span>My Dress (6)</span>
-            </h3>
             <div class="ewl_wc-action ewl-w-c-d-action">
               <div class="ewl_cc-dropdown ewl_cld-dropdown">
                 <button class="ewl_cnc-btn" onclick="toggleDropdown()">
                   <span class="ewl_c-drop-btn-info">
-                    <img src="img/d1.jpg" alt="" />
+                    <span class="ewl_c-drop-btn-info-thumb"><img src="img/green-t-shirt.webp" alt="" /></span>
                     <span>My Dress (6)</span>
                   </span>
                   <span class="ewl_c-drop-btn-arrow">
@@ -43,42 +36,77 @@
                 <div id="myDropdown" class="ewl_cc-dropdown-content">
                   <div class="ewl-collection-list-option">
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d1.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/green-t-shirt.webp" alt="" /></span>
                       <span>My Dress (6)</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d2.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/hydrogen.webp" alt="" /></span>
                       <span>Electronics (2)</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d3.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/d3.jpg" alt="" /></span>
                       <span>Food & Drinks</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d1.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/d2.jpg" alt="" /></span>
                       <span>My Dress (6)</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d2.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/d1.jpg" alt="" /></span>
                       <span>Electronics (2)</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d3.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/green-t-shirt.webp" alt="" /></span>
                       <span>Food & Drinks</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d1.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/hydrogen.webp" alt="" /></span>
                       <span>My Dress (6)</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d2.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/green-t-shirt.webp" alt="" /></span>
                       <span>Electronics (2)</span>
                     </span>
                     <span class="ewl_c-drop-btn-info">
-                      <img src="img/d3.jpg" alt="" />
+                      <span class="ewl_c-drop-btn-info-thumb"><img src="img/green-t-shirt.webp" alt="" /></span>
                       <span>Food & Drinks</span>
                     </span>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="ewl_q-action">
+              <button class="ewl_q-action-button" onclick="ewl_q_toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                </svg>
+              </button>
+              <div class="ewl_q-action-menu" id="ewl_q-action-menu">
+                <div class="ewl_q-action-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.04,15h-3.54v-3.54L12.03,1.93c.33-.33.85-.33,1.18,0l2.36,2.36c.33.33.33.85,0,1.18L6.04,15ZM2.5,16.66h15v1.67H2.5v-1.67Z" />
+                  </svg>
+                  Rename
+                </div>
+                <div class="ewl_q-action-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M11.31,14.39l-4.26-2.32c-.53.52-1.25.85-2.05.85-1.61,0-2.92-1.31-2.92-2.92s1.31-2.92,2.92-2.92c.8,0,1.53.32,2.05.85l4.26-2.32c-.04-.2-.06-.4-.06-.61,0-1.61,1.31-2.92,2.92-2.92s2.92,1.31,2.92,2.92-1.31,2.92-2.92,2.92c-.8,0-1.53-.32-2.05-.85l-4.26,2.32c.04.2.06.4.06.61s-.02.41-.06.61l4.26,2.32c.53-.52,1.25-.85,2.05-.85,1.61,0,2.92,1.31,2.92,2.92s-1.31,2.92-2.92,2.92-2.92-1.31-2.92-2.92c0-.21.02-.41.06-.61Z"
+                    />
+                  </svg>
+                  Share List
+                </div>
+                <div class="ewl_q-action-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5.83,5v-2.5c0-.46.37-.83.83-.83h10c.46,0,.83.37.83.83v11.67c0,.46-.37.83-.83.83h-2.5v2.5c0,.46-.37.83-.84.83H3.34c-.46,0-.84-.37-.84-.83V5.83c0-.46.38-.83.84-.83h2.49ZM4.17,6.67v10s8.33,0,8.33,0V6.67H4.17ZM7.5,5h6.67v8.33h1.67V3.33H7.5v1.67Z" />
+                  </svg>
+                  Duplicate
+                </div>
+                <div class="ewl_q-action-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17,5.75h5v2.08h-2v13.54c0,.58-.45,1.04-1,1.04H5c-.55,0-1-.47-1-1.04V7.83h-2v-2.08h5v-3.12c0-.58.45-1.04,1-1.04h8c.55,0,1,.47,1,1.04v3.12ZM18,7.83H6v12.5h12V7.83ZM9,10.96h2v6.25h-2v-6.25ZM13,10.96h2v6.25h-2v-6.25ZM9,3.67v2.08h6v-2.08h-6Z" />
+                  </svg>
+                  Delete
                 </div>
               </div>
             </div>
@@ -162,6 +190,12 @@
               </div>
             </div>
           </div>
+          <a href="#" class="ewl_vd-link">
+            <span>View Details</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+            </svg>
+          </a>
         </div>
 
         <!-- / modal body -->
@@ -169,21 +203,52 @@
     </div>
 
     <script>
-      function toggleDropdown() {
-        const dropdown = document.getElementById("myDropdown");
-        dropdown.classList.toggle("show");
-      }
-
-      // Close dropdown if clicked outside the dropdown or button
-      window.addEventListener("click", function (event) {
-        const dropdown = document.getElementById("myDropdown");
-        const button = document.querySelector(".ewl_cnc-btn");
-
-        // Check if the click is outside both the button and dropdown
-        if (!button.contains(event.target) && !dropdown.contains(event.target)) {
-          dropdown.classList.remove("show");
+      (function () {
+        // Toggle dropdown menu for "myDropdown"
+        function toggleDropdown() {
+          const dropdown = document.getElementById("myDropdown");
+          if (dropdown) {
+            dropdown.classList.toggle("show");
+          }
         }
-      });
+
+        // Toggle action menu dropdown
+        function toggleActionMenu() {
+          const menu = document.getElementById("ewl_q-action-menu");
+          if (menu) {
+            menu.classList.toggle("show");
+          }
+        }
+
+        // Add class to parent with .ewl_sidebar
+        function handleClick(childElement) {
+          const parent = childElement.closest(".ewl_sidebar");
+          if (parent) {
+            parent.classList.add("ewl-sidebar-disappear");
+          }
+        }
+
+        // Global click handler to close dropdowns if clicked outside
+        window.addEventListener("click", function (event) {
+          // Handle 'myDropdown' closing
+          const dropdown = document.getElementById("myDropdown");
+          const dropdownBtn = document.querySelector(".ewl_cnc-btn");
+          if (dropdown && dropdownBtn && !dropdown.contains(event.target) && !dropdownBtn.contains(event.target)) {
+            dropdown.classList.remove("show");
+          }
+
+          // Handle 'ewl_q-action-menu' closing
+          const actionMenu = document.getElementById("ewl_q-action-menu");
+          if (actionMenu && !event.target.closest(".ewl_q-action-button") && actionMenu.classList.contains("show")) {
+            actionMenu.classList.remove("show");
+          }
+        });
+
+        // Expose functions to global scope if needed
+        window.toggleDropdown = toggleDropdown;
+        window.ewl_q_toggleMenu = toggleActionMenu;
+        window.handleClick = handleClick;
+      })();
     </script>
   </body>
 </html>

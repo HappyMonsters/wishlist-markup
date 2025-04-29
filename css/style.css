@@ -733,10 +733,23 @@ input.ewl-checkbox[type="checkbox"]:before {
   align-items: center;
 }
 
+.ewl_c-drop-btn-info-thumb {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
 .ewl_c-drop-btn-info img {
   width: 32px;
   height: 32px;
   border-radius: 50px;
+}
+
+.ewl_c-drop-btn-info-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .ewl_c-drop-btn-info span {
@@ -800,6 +813,12 @@ input.ewl-checkbox[type="checkbox"]:before {
   .ewl-w-c-d-action {
     justify-content: center;
   }
+  .ewl_wc-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+  }
 }
 
 /* add to wishlist button */
@@ -846,11 +865,90 @@ input.ewl-checkbox[type="checkbox"]:before {
   right: -500px;
   animation: slideRight 0.3s ease-out forwards;
 }
-
+.ewl_sidebar.ewl-sidebar-disappear {
+  background-color: transparent;
+}
 .ewl_sidebar .ewl_modal-content .ewl-cl-lft {
   width: auto;
 }
 
 .ewl_sidebar .ewl_modal-content .ewl_product-view-cart-action-responsive {
   display: flex;
+}
+
+.ewl_sidebar .ewl_modal-content .ewl_product-info img {
+  width: 70px;
+  height: auto;
+}
+.ewl_sidebar .ewl_modal-content .ewl_product-info-title {
+  font-size: 16px;
+}
+.ewl_sidebar .ewl_modal-content .ewl_wc-header {
+  margin-bottom: 2rem;
+}
+.ewl_vd-link {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #141b34;
+  font-size: 16px;
+}
+.ewl_vd-link:hover {
+  text-decoration: none;
+}
+
+.ewl_q-action {
+  position: relative;
+  display: inline-block;
+}
+.ewl_q-action-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #090909;
+}
+
+.ewl_q-action-button:hover {
+  color: #000;
+}
+
+.ewl_q-action-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #e1dfed;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-width: 150px;
+  z-index: 1000;
+  overflow: hidden;
+}
+.ewl_q-action-menu.show {
+  display: block;
+}
+.ewl_q-action-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: #141b34;
+}
+.ewl_q-action-item:hover {
+  background-color: #f3f4f5;
+}
+
+.ewl_sidebar .ewl_modal-content {
+}
+.ewl_sidebar .ewl_modal-content {
+}
+.ewl_sidebar .ewl_modal-content {
+}
+.ewl_sidebar .ewl_modal-content {
 }
