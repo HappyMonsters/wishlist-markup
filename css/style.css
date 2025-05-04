@@ -958,3 +958,44 @@ input.ewl-checkbox[type="checkbox"]:before {
   height: calc(100vh - 205px);
   overflow-y: scroll;
 }
+
+.ewl_wl-grid .ewl_wl-grid-item {
+  position: relative;
+}
+.ewl_collection-rename-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ewl_collection-rename-wrap input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.ewl_rnm-btn {
+  padding: 6px 15px;
+  font-size: 12px;
+  background-color: #090909;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.ewl_rnm-btn:hover {
+  background-color: #3f3f3f;
+}
