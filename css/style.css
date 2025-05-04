@@ -764,7 +764,7 @@ input.ewl-checkbox[type="checkbox"]:before {
 }
 
 .ewl-collection-list-option {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 300px;
 }
 
@@ -956,7 +956,7 @@ input.ewl-checkbox[type="checkbox"]:before {
 
 .ewl_sidebar .ewl_modal-content .ewl_collection-wrap {
   height: calc(100vh - 205px);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .ewl_wl-grid .ewl_wl-grid-item {
