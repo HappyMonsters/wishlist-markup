@@ -954,11 +954,7 @@ input.ewl-checkbox[type="checkbox"]:before {
   background-color: #f3f4f5;
 }
 
-.ewl_sidebar .ewl_modal-content {
-}
-.ewl_sidebar .ewl_modal-content {
-}
-.ewl_sidebar .ewl_modal-content {
-}
-.ewl_sidebar .ewl_modal-content {
+.ewl_sidebar .ewl_modal-content .ewl_ewl_collection-wrap {
+  height: calc(100vh - 205px);
+  overflow-y: scroll;
 }
