@@ -973,6 +973,7 @@ input.ewl-checkbox[type="checkbox"]:before {
   justify-content: space-between;
   gap: 0.5rem;
   align-items: center;
+  background: #fff;
 }
 
 .ewl_collection-rename-wrap input {
