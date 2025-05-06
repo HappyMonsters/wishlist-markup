@@ -81,9 +81,9 @@
   transition: all 0.3s;
 }
 .ewl-light-btn:hover {
-  background: #808080;
-  color: #fff;
-  border: 1px solid #808080;
+  background: #eee;
+  color: #000;
+  border: 1px solid #C1C1C1;
 }
 
 .ewl-dark-btn {
