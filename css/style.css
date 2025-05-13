@@ -54,6 +54,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: bold;
+  line-height: normal;
 }
 
 .ewl-t-lg {
@@ -83,7 +84,7 @@
 .ewl-light-btn:hover {
   background: #eee;
   color: #000;
-  border: 1px solid #C1C1C1;
+  border: 1px solid #c1c1c1;
 }
 
 .ewl-dark-btn {
@@ -413,6 +414,8 @@ input.ewl-checkbox[type="checkbox"]:before {
   }
   .ewl_cc-dropdown-content {
     min-width: 260px !important;
+    transform: translateX(-50%);
+    left: 50%;
   }
   .ewl_wc-action {
     justify-content: center;
@@ -814,12 +817,12 @@ input.ewl-checkbox[type="checkbox"]:before {
   .ewl-w-c-d-action {
     justify-content: center;
   }
-  .ewl_wc-header {
+  /* .ewl_wc-header {
     display: flex;
     align-items: center;
     gap: 1rem;
     justify-content: space-around;
-  }
+  } */
 }
 
 /* add to wishlist button */
@@ -1000,4 +1003,27 @@ input.ewl-checkbox[type="checkbox"]:before {
 
 .ewl_rnm-btn:hover {
   background-color: #3f3f3f;
+}
+
+/* create new collection btn for dropdown */
+
+.ews_cnc-wrap .ewl_cnc-btn {
+  padding: 12px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 100%;
+}
+
+.ews_cnc-wrap .ewl_cnc-btn {
+  border: 1px solid #007aff;
+  color: #007aff;
+  background: #fff;
+}
+ 
+
+.ews_cnc-wrap {
+  padding: 10px;
 }
